@@ -1,0 +1,73 @@
+:root {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --highlight: #FF0050;
+    --card-bg: #1e1e1e;
+}
+
+body {
+    margin: 0;
+    font-family: 'Pretendard', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.highlight { color: var(--highlight); }
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: var(--highlight);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+.btn:hover { transform: translateY(-3px); }
+
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bento-item {
+    background: var(--card-bg);
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s;
+}
+.bento-item:hover { transform: scale(1.02); }
+
+.bento-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.video-wrapper { position: relative; }
+
+.stats-badge {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    backdrop-filter: blur(5px);
+}
+.stats-badge i { color: var(--highlight); margin-right: 5px; }
+.stats-badge span { margin-right: 15px; }
