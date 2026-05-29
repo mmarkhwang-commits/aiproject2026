@@ -14,26 +14,85 @@
         <a href="https://udmt.aiapp.help/" class="btn" target="_blank">우동맛 홍보 페이지</a>
     </header>
 
-    <main class="bento-grid">
-        <div class="bento-item video-card">
-            <div class="video-wrapper">
-                <img src="https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg" alt="YouTube Thumbnail">
-                <div class="stats-badge" id="yt-stats-1">
-                    <i class="fa-solid fa-eye"></i> <span class="views">로딩중...</span>
-                    <i class="fa-solid fa-heart"></i> <span class="likes">로딩중...</span>
+    <main>
+        <!-- 비디오 섹션 -->
+        <section class="bento-grid">
+            <div class="bento-item video-card">
+                <div class="video-wrapper">
+                    <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="YouTube Thumbnail 1">
+                    <div class="stats-badge" id="yt-stats-1" data-video-id="dQw4w9WgXcQ">
+                        <i class="fa-solid fa-eye"></i> <span class="views">로딩중...</span>
+                        <i class="fa-solid fa-heart"></i> <span class="likes">로딩중...</span>
+                    </div>
+                </div>
+                <h3>인기 영상 #1</h3>
+            </div>
+
+            <div class="bento-item video-card">
+                <div class="video-wrapper">
+                    <img src="https://img.youtube.com/vi/9bZkp7q19f0/maxresdefault.jpg" alt="YouTube Thumbnail 2">
+                    <div class="stats-badge" id="yt-stats-2" data-video-id="9bZkp7q19f0">
+                        <i class="fa-solid fa-eye"></i> <span class="views">로딩중...</span>
+                        <i class="fa-solid fa-heart"></i> <span class="likes">로딩중...</span>
+                    </div>
+                </div>
+                <h3>인기 영상 #2</h3>
+            </div>
+
+            <div class="bento-item video-card">
+                <div class="video-wrapper">
+                    <img src="https://img.youtube.com/vi/jNQXAC9IVRw/maxresdefault.jpg" alt="YouTube Thumbnail 3">
+                    <div class="stats-badge" id="yt-stats-3" data-video-id="jNQXAC9IVRw">
+                        <i class="fa-solid fa-eye"></i> <span class="views">로딩중...</span>
+                        <i class="fa-solid fa-heart"></i> <span class="likes">로딩중...</span>
+                    </div>
+                </div>
+                <h3>인기 영상 #3</h3>
+            </div>
+        </section>
+
+        <!-- 이미지 갤러리 섹션 -->
+        <section class="gallery-section">
+            <h2>갤러리</h2>
+            <div class="image-gallery">
+                <div class="gallery-item" data-src="전체사이트디자인.png">
+                    <img src="전체사이트디자인.png" alt="Infographic Poster">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-src="로고.png">
+                    <img src="로고.png" alt="Goods Image">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-src="전체사이트디자인.png">
+                    <img src="전체사이트디자인.png" alt="Design Work 3">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-src="로고.png">
+                    <img src="로고.png" alt="Design Work 4">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
                 </div>
             </div>
-            <h3>타이틀 비디오 제목</h3>
-        </div>
-
-        <div class="bento-item image-card">
-            <img src="전체사이트디자인.png" alt="Infographic Poster">
-        </div>
-        
-        <div class="bento-item image-card">
-            <img src="로고.png" alt="Goods Image">
-        </div>
+        </section>
     </main>
+
+    <!-- 이미지 모달 -->
+    <div class="modal" id="imageModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modalImage" src="" alt="확대된 이미지">
+        </div>
+    </div>
 
     <script src="app.js"></script>
 </body>
